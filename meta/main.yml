@@ -1,0 +1,21 @@
+galaxy_info:
+  author: Nils Berg
+  description: Ansible Role for Installing Nginx with advanced default config
+  company: "Backslash Seven GmbH"
+  license: GPL-3.0-only
+  min_ansible_version: 2.9
+  platforms:
+  - name: EL
+    versions:
+      - 8
+  - name: Debian
+    versions:
+      - 10
+  - name: Ubuntu
+    versions:
+      - 18.04
+      - 20.04
+  galaxy_tags:
+    - system
+    - automation
+
