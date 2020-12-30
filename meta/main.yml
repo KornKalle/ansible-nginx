@@ -10,10 +10,12 @@ galaxy_info:
       - 8
   - name: Debian
     versions:
-      - all
+      - buster
+      - stretch
   - name: Ubuntu
     versions:
-      - all
+      - bionic
+      - focal
   galaxy_tags:
     - system
     - automation

@@ -29,7 +29,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: nginx
       roles:
-         - { role: kornkalle.nginx }
+         - { role: kornkalle.ansible_nginx }
 
 License
 -------
