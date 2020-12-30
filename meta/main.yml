@@ -10,12 +10,10 @@ galaxy_info:
       - 8
   - name: Debian
     versions:
-      - 10
+      - all
   - name: Ubuntu
     versions:
-      - 18.04
-      - 20.04
+      - all
   galaxy_tags:
     - system
     - automation
-
