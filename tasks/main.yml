@@ -45,6 +45,8 @@
     group: root
     mode: '0600'
     backup: yes
+  notify:
+    - restart nginx
 
 - name: enable default vHost
   file:
