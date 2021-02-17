@@ -6,6 +6,7 @@ The default config will be found under templates/nginx.conf.j2 and enables the D
 Place your vHosts in /etc/nginx/sites-available and link them into /etc/nginx/sites-enabled.
 
 The default vHost will be enabled, for better Let's Encrypt certbot compatibility out of the box.
+The path /nginx_stats will also link to stub_status for out-of-the-box compatibility with the official nginx prometheus exporter.
 
 Requirements
 ------------
