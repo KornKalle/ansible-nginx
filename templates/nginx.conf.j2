@@ -2,7 +2,7 @@
 # This file is managed by Ansible, changes will be overwritten
 ##
 
-user {{ nginx_user }} {{ nginx_group }};
+user {{ nginx_user | default('www-data') }} {{ nginx_group | default('www-data') }};
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;

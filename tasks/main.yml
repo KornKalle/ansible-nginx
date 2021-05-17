@@ -1,14 +1,4 @@
 ---
-- name: Set username for Debian
-  set_fact:
-    nginx_user: "www-data"
-  when: ansible_os_family == "Debian" and nginx_user is not defined
-  
-- name: Set groupname for Debian
-  set_fact:
-    nginx_user: "www-data"
-  when: ansible_os_family == "Debian" and nginx_group is not defined
-
 - name: Set fact for RedHat
   set_fact:
     nginx_user: "nginx"
