@@ -16,7 +16,7 @@
 
 - name: copy nginx config
   template:
-    src: templates/nginx.conf.j2
+    src: "{{ nginx_config | default('templates/nginx.conf.j2')}}"
     dest: /etc/nginx/nginx.conf
     owner: root
     group: root
