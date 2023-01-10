@@ -37,28 +37,6 @@
     - sites-available
     - sites-enabled
 
-- name: copy default vHost
-  template:
-    src: templates/default.j2
-    dest: /etc/nginx/sites-available/default
-    owner: root
-    group: root
-    mode: '0600'
-    backup: yes
-  notify:
-    - restart nginx
-
-- name: enable default vHost
-  file:
-    src: /etc/nginx/sites-available/default
-    path: /etc/nginx/sites-enabled/default
-    state: link
-    owner: root
-    group: root
-    mode: '0600'
-  notify:
-    - restart nginx
-
 - name: start and enable nginx
   systemd:
     name: nginx
